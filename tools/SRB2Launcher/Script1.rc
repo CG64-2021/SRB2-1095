@@ -1,0 +1,221 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 272, 170
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Official Sonic Robo Blast 2 Launcher v0.1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LAUNCHCONFIG,125,15,135,155,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Saved Launch Configuration",IDC_STATIC,120,5,145,45
+    GROUPBOX        "WAD/SOC Files",IDC_STATIC,120,55,145,45
+    COMBOBOX        IDC_EXTFILECOMBO,125,65,135,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         102,IDC_STATIC,"Static",SS_BITMAP,5,90,107,79
+    PUSHBUTTON      "&About",IDC_ABOUT,125,155,25,10
+    DEFPUSHBUTTON   "&Go!",IDC_GO,60,150,50,14
+    PUSHBUTTON      "Add",IDC_ADDFILE,225,80,35,15
+    PUSHBUTTON      "Remove",IDC_REMOVEFILE,185,80,35,15
+    PUSHBUTTON      "Save",IDC_SAVELAUNCHCFG,220,30,40,15
+    GROUPBOX        "Multiplayer",IDC_STATIC,5,5,105,50
+    PUSHBUTTON      "&Join A Game",IDC_JOINGAME,10,15,50,15
+    PUSHBUTTON      "&Host A Game",IDC_HOSTGAME,55,35,50,15
+    EDITTEXT        IDC_PARAMETERS,160,135,105,30,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    RTEXT           "Manual Parameters:",IDC_STATIC,115,135,40,15
+    GROUPBOX        "Executable Name",IDC_STATIC,120,105,145,25
+    EDITTEXT        IDC_EXENAME,125,115,95,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Choose...",IDC_FINDEXENAME,225,115,35,10
+    PUSHBUTTON      "General &Options",IDC_OPTIONS,55,60,50,20,BS_MULTILINE
+END
+
+IDD_JOINGAME DIALOG DISCARDABLE  0, 0, 367, 166
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Join Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Refresh List",IDC_SEARCHGAMES,5,140,55,20,BS_MULTILINE
+    CONTROL         "List1",IDC_GAMELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,5,15,240,120
+    EDITTEXT        IDC_NAME,295,10,65,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COLOR,295,30,65,20,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Name:",IDC_STATIC,265,10,25,10
+    RTEXT           "Color:",IDC_STATIC,265,30,25,10
+    COMBOBOX        IDC_SKIN,295,50,65,125,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Character:",IDC_STATIC,255,50,35,10
+    EDITTEXT        IDC_ADDRESS,255,115,70,12,ES_AUTOHSCROLL
+    LTEXT           "Manual Address:",IDC_STATIC,255,105,60,10
+    CONTROL         "Don't check server for files.",IDC_NOFILE,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,255,70,105,
+                    10
+    DEFPUSHBUTTON   "&Go!",IDC_JOINSTART,330,115,30,15
+    LTEXT           "Double-Click on a game to join:",IDC_STATIC,5,5,215,10
+    CONTROL         "Don't download files",IDC_NODOWNLOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,255,90,105,10
+END
+
+IDD_HOSTGAME DIALOG DISCARDABLE  0, 0, 317, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Host Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Game Type",IDC_STATIC,5,5,130,60
+    PUSHBUTTON      "&Options...",IDC_OPTIONS,90,30,40,15
+    COMBOBOX        IDC_GAMETYPE,10,15,120,15,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Max # of players:",IDC_STATIC,35,81,70,10
+    EDITTEXT        IDC_MAXPLAYERS,110,81,20,12,ES_AUTOHSCROLL
+    GROUPBOX        "General Options",IDC_STATIC,5,70,130,105
+    COMBOBOX        IDC_STARTMAP,60,50,70,15,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Start on map #:",IDC_STATIC,30,45,25,20
+    CONTROL         "Force players to use host's character",IDC_FORCESKIN,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,50,
+                    95,80,15
+    COMBOBOX        IDC_ADVANCEMAP,45,115,85,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Advance Stage:",IDC_STATIC,10,110,30,20
+    CONTROL         "Don't advertise server on Internet",IDC_INTERNETSERVER,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,60,
+                    130,70,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_JOINGAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_HOSTGAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_JOINGAME DLGINIT
+BEGIN
+    IDC_SKIN, 0x403, 6, 0
+0x6f53, 0x696e, 0x0063, 
+    IDC_SKIN, 0x403, 6, 0
+0x6154, 0x6c69, 0x0073, 
+    IDC_SKIN, 0x403, 9, 0
+0x6e4b, 0x6375, 0x6c6b, 0x7365, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

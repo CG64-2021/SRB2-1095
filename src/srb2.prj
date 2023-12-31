@@ -1,0 +1,503 @@
+# Anjuta Version 1.2.4a 
+Compatibility Level: 1 
+
+<PROJECT_DESCRIPTION_START>
+<PROJECT_DESCRIPTION_END>
+<CONFIG_PROGS_START>
+<CONFIG_PROGS_END>
+<CONFIG_LIBS_START>
+<CONFIG_LIBS_END>
+<CONFIG_HEADERS_START>
+<CONFIG_HEADERS_END>
+<CONFIG_CHARACTERISTICS_START>
+<CONFIG_CHARACTERISTICS_END>
+<CONFIG_LIB_FUNCS_START>
+<CONFIG_LIB_FUNCS_END>
+<CONFIG_ADDITIONAL_START>
+<CONFIG_ADDITIONAL_END>
+<CONFIG_FILES_START>
+<CONFIG_FILES_END>
+<MAKEFILE_AM_START>
+<MAKEFILE_AM_END>
+
+props.file.type=project
+
+anjuta.version=1.2.4a
+anjuta.compatibility.level=1
+
+project.name=srb2
+project.type=GENERIC
+project.target.type=EXECUTABLE
+project.version=1.09.3
+project.author=Sonic Team Jr.
+project.source.target=unknown
+project.has.gettext=0
+project.gui.command=
+project.programming.language=C
+project.excluded.modules=intl
+
+project.config.extra.modules.before=
+project.config.extra.modules.after=
+project.config.blocked=1
+project.config.disable.overwriting=1 1 1 1 1 1 1 1 1 
+
+project.menu.entry=srb2 Version 1.09.3
+project.menu.group=Application
+project.menu.comment=srb2 Version 1.09.3
+project.menu.icon=
+project.menu.need.terminal=0
+
+project.configure.options=
+anjuta.program.arguments=
+preferences.build.option.jobs=0
+preferences.build.option.silent=0
+preferences.build.option.autosave=0
+preferences.make=make
+preferences.build.option.keep.going=1
+preferences.build.option.warn.undef=0
+preferences.autoformat.custom.style= -i8 -sc -bli0 -bl0 -cbi0 -ss
+preferences.indent.opening=0
+preferences.autoformat.disable=1
+preferences.indent.automatic=1
+preferences.use.tabs=1
+preferences.indent.size=4
+preferences.tabsize=4
+preferences.indent.closing=0
+
+module.include.name=.
+module.include.type=
+module.include.files=\
+	hardware/r_d3d/mesa/D3D/D3DTextureMgr.h\
+	hardware/r_d3d/mesa/D3D/D3DMesa.h\
+	hardware/r_d3d/mesa/D3D/NULLProcs.h\
+	hardware/r_d3d/mesa/D3D/D3DSurface.h\
+	hardware/r_d3d/mesa/D3D/Debug.h\
+	hardware/r_d3d/mesa/GL/glu_mangle.h\
+	hardware/r_d3d/mesa/GL/gl.h\
+	hardware/r_d3d/mesa/GL/gl_mangle.h\
+	hardware/r_d3d/mesa/GL/glu.h\
+	hardware/r_d3d/mesa/GL/osmesa.h\
+	hardware/r_d3d/mesa/copypix.h\
+	hardware/r_d3d/mesa/misc.h\
+	hardware/r_d3d/mesa/depth.h\
+	hardware/r_d3d/mesa/TYPES.H\
+	hardware/r_d3d/mesa/light.h\
+	hardware/r_d3d/mesa/vbrender.h\
+	hardware/r_d3d/mesa/all.h\
+	hardware/r_d3d/mesa/points.h\
+	hardware/r_d3d/mesa/linetemp.h\
+	hardware/r_d3d/mesa/quads.h\
+	hardware/r_d3d/mesa/drawpix.h\
+	hardware/r_d3d/mesa/dlist.h\
+	hardware/r_d3d/mesa/image.h\
+	hardware/r_d3d/mesa/hash.h\
+	hardware/r_d3d/mesa/blend.h\
+	hardware/r_d3d/mesa/attrib.h\
+	hardware/r_d3d/mesa/dd.h\
+	hardware/r_d3d/mesa/accum.h\
+	hardware/r_d3d/mesa/pb.h\
+	hardware/r_d3d/mesa/stencil.h\
+	hardware/r_d3d/mesa/pointers.h\
+	hardware/r_d3d/mesa/CONFIG.H\
+	hardware/r_d3d/mesa/lines.h\
+	hardware/r_d3d/mesa/bitmap.h\
+	hardware/r_d3d/mesa/alphabuf.h\
+	hardware/r_d3d/mesa/macros.h\
+	hardware/r_d3d/mesa/feedback.h\
+	hardware/r_d3d/mesa/tritemp.h\
+	hardware/r_d3d/mesa/zoom.h\
+	hardware/r_d3d/mesa/scissor.h\
+	hardware/r_d3d/mesa/clip.h\
+	hardware/r_d3d/mesa/polygon.h\
+	hardware/r_d3d/mesa/masking.h\
+	hardware/r_d3d/mesa/xform.h\
+	hardware/r_d3d/mesa/readpix.h\
+	hardware/r_d3d/mesa/texture.h\
+	hardware/r_d3d/mesa/span.h\
+	hardware/r_d3d/mesa/texstate.h\
+	hardware/r_d3d/mesa/varray.h\
+	hardware/r_d3d/mesa/triangle.h\
+	hardware/r_d3d/mesa/mmath.h\
+	hardware/r_d3d/mesa/api.h\
+	hardware/r_d3d/mesa/vbfill.h\
+	hardware/r_d3d/mesa/asm_386.h\
+	hardware/r_d3d/mesa/vbxform.h\
+	hardware/r_d3d/mesa/shade.h\
+	hardware/r_d3d/mesa/alpha.h\
+	hardware/r_d3d/mesa/rastpos.h\
+	hardware/r_d3d/mesa/texobj.h\
+	hardware/r_d3d/mesa/logic.h\
+	hardware/r_d3d/mesa/rect.h\
+	hardware/r_d3d/mesa/fixed.h\
+	hardware/r_d3d/mesa/asm_mmx.h\
+	hardware/r_d3d/mesa/teximage.h\
+	hardware/r_d3d/mesa/matrix.h\
+	hardware/r_d3d/mesa/colortab.h\
+	hardware/r_d3d/mesa/vb.h\
+	hardware/r_d3d/mesa/fog.h\
+	hardware/r_d3d/mesa/get.h\
+	hardware/r_d3d/mesa/winpos.h\
+	hardware/r_d3d/mesa/pixel.h\
+	hardware/r_d3d/mesa/context.h\
+	hardware/r_d3d/mesa/enable.h\
+	hardware/r_d3d/mesa/eval.h\
+	hardware/r_d3d/r_d3d.h\
+	hardware/r_glide/3dmath.h\
+	hardware/r_opengl/r_opengl.h\
+	hardware/hws_data.h\
+	hardware/hw_drv.h\
+	hardware/hw3dsdrv.h\
+	hardware/hw_light.h\
+	hardware/hw_data.h\
+	hardware/hw_dll.h\
+	hardware/hw3sound.h\
+	hardware/hw_defs.h\
+	hardware/hw_md2.h\
+	hardware/hw_glob.h\
+	hardware/hw_main.h\
+	hardware/hw_glide.h\
+	win32/mid2strm.h\
+	win32/win_main.h\
+	win32/win_dbg.h\
+	win32/fabdxlib.h\
+	win32/midstuff.h\
+	win32/dx_error.h\
+	win32/resource.h\
+	win32/afxres.h\
+	win32/win_dll.h\
+	sdl/SRB2DC/dchelp.h\
+	sdl/SRB2CE/cehelp.h\
+	sdl/filter/interp.h\
+	sdl/filter/hq2x.h\
+	sdl/filter/filters.h\
+	sdl/filter/lq2x.h\
+	sdl/SDL_main/SDL_macosx_main.h\
+	sdl/macosx/mac_alert.h\
+	sdl/SRB2XBOX/xboxhelp.h\
+	sdl/endtxt.h\
+	sdl/hwsym_sdl.h\
+	sdl/ogl_sdl.h\
+	djgppdos/internal.h\
+	djgppdos/vid_vesa.h\
+	djgppdos/rdb-s.h\
+	djgppdos/bcd.h\
+	console.h\
+	doomdef.h\
+	i_video.h\
+	g_game.h\
+	v_video.h\
+	p_pspr.h\
+	z_zone.h\
+	d_clisrv.h\
+	m_argv.h\
+	sounds.h\
+	m_swap.h\
+	r_sky.h\
+	i_system.h\
+	dstrings.h\
+	st_stuff.h\
+	f_finale.h\
+	r_main.h\
+	m_bbox.h\
+	y_inter.h\
+	m_fixed.h\
+	g_state.h\
+	byteptr.h\
+	doomstat.h\
+	m_random.h\
+	i_net.h\
+	doomtype.h\
+	m_cheat.h\
+	r_state.h\
+	r_bsp.h\
+	i_joy.h\
+	r_things.h\
+	r_draw.h\
+	d_englsh.h\
+	r_data.h\
+	d_ticcmd.h\
+	p_spec.h\
+	p_local.h\
+	r_local.h\
+	p5prof.h\
+	keys.h\
+	m_menu.h\
+	r_segs.h\
+	d_event.h\
+	md5.h\
+	d_net.h\
+	am_map.h\
+	info.h\
+	i_tcp.h\
+	d_player.h\
+	filesrch.h\
+	p_setup.h\
+	doomdata.h\
+	i_sound.h\
+	r_defs.h\
+	g_input.h\
+	s_sound.h\
+	screen.h\
+	r_plane.h\
+	d_think.h\
+	p_maputl.h\
+	hu_stuff.h\
+	p_saveg.h\
+	r_splats.h\
+	mserv.h\
+	w_wad.h\
+	p_mobj.h\
+	m_misc.h\
+	p_tick.h\
+	tables.h\
+	d_netcmd.h\
+	command.h\
+	d_netfil.h\
+	d_main.h\
+	dehacked.h
+
+module.source.name=.
+module.source.type=
+module.source.files=\
+	hardware/s_ds3d/s_ds3d.c\
+	hardware/r_d3d/mesa/D3D/D3Dvbrender.cpp\
+	hardware/r_d3d/mesa/D3D/D3DInit.cpp\
+	hardware/r_d3d/mesa/D3D/D3DTextureMgr.cpp\
+	hardware/r_d3d/mesa/D3D/DDrawPROCS.cpp\
+	hardware/r_d3d/mesa/D3D/NullProcs.cpp\
+	hardware/r_d3d/mesa/D3D/D3DSurface.cpp\
+	hardware/r_d3d/mesa/D3D/debug.cpp\
+	hardware/r_d3d/mesa/D3D/WGL.cpp\
+	hardware/r_d3d/mesa/D3D/d3dBitmaps.cpp\
+	hardware/r_d3d/mesa/D3D/D3DRaster.cpp\
+	hardware/r_d3d/mesa/depth.c\
+	hardware/r_d3d/mesa/light.c\
+	hardware/r_d3d/mesa/vbrender.c\
+	hardware/r_d3d/mesa/points.c\
+	hardware/r_d3d/mesa/quads.c\
+	hardware/r_d3d/mesa/drawpix.c\
+	hardware/r_d3d/mesa/dlist.c\
+	hardware/r_d3d/mesa/image.c\
+	hardware/r_d3d/mesa/hash.c\
+	hardware/r_d3d/mesa/blend.c\
+	hardware/r_d3d/mesa/attrib.c\
+	hardware/r_d3d/mesa/accum.c\
+	hardware/r_d3d/mesa/lines.c\
+	hardware/r_d3d/mesa/pb.c\
+	hardware/r_d3d/mesa/vb.c\
+	hardware/r_d3d/mesa/stencil.c\
+	hardware/r_d3d/mesa/pointers.c\
+	hardware/r_d3d/mesa/bitmap.c\
+	hardware/r_d3d/mesa/alphabuf.c\
+	hardware/r_d3d/mesa/feedback.c\
+	hardware/r_d3d/mesa/zoom.c\
+	hardware/r_d3d/mesa/scissor.c\
+	hardware/r_d3d/mesa/clip.c\
+	hardware/r_d3d/mesa/polygon.c\
+	hardware/r_d3d/mesa/masking.c\
+	hardware/r_d3d/mesa/api2.c\
+	hardware/r_d3d/mesa/xform.c\
+	hardware/r_d3d/mesa/readpix.c\
+	hardware/r_d3d/mesa/texture.c\
+	hardware/r_d3d/mesa/span.c\
+	hardware/r_d3d/mesa/texstate.c\
+	hardware/r_d3d/mesa/varray.c\
+	hardware/r_d3d/mesa/triangle.c\
+	hardware/r_d3d/mesa/mmath.c\
+	hardware/r_d3d/mesa/vbfill.c\
+	hardware/r_d3d/mesa/vbxform.c\
+	hardware/r_d3d/mesa/shade.c\
+	hardware/r_d3d/mesa/alpha.c\
+	hardware/r_d3d/mesa/apiext.c\
+	hardware/r_d3d/mesa/rastpos.c\
+	hardware/r_d3d/mesa/texobj.c\
+	hardware/r_d3d/mesa/logic.c\
+	hardware/r_d3d/mesa/rect.c\
+	hardware/r_d3d/mesa/asm_mmx.c\
+	hardware/r_d3d/mesa/teximage.c\
+	hardware/r_d3d/mesa/matrix.c\
+	hardware/r_d3d/mesa/colortab.c\
+	hardware/r_d3d/mesa/fog.c\
+	hardware/r_d3d/mesa/get.c\
+	hardware/r_d3d/mesa/winpos.c\
+	hardware/r_d3d/mesa/pixel.c\
+	hardware/r_d3d/mesa/context.c\
+	hardware/r_d3d/mesa/enable.c\
+	hardware/r_d3d/mesa/eval.c\
+	hardware/r_d3d/mesa/api1.c\
+	hardware/r_d3d/mesa/copypix.c\
+	hardware/r_d3d/mesa/misc.c\
+	hardware/r_d3d/d3d_win.c\
+	hardware/r_d3d/r_d3d.c\
+	hardware/r_minigl/r_minigl.c\
+	hardware/s_openal/s_openal.c\
+	hardware/r_glide/3dmath.c\
+	hardware/r_glide/r_glide.c\
+	hardware/r_opengl/ogl_win.c\
+	hardware/r_opengl/r_opengl.c\
+	hardware/s_fmod/s_fmod.c\
+	hardware/hw_cache.c\
+	hardware/hw_light.c\
+	hardware/hw3sound.c\
+	hardware/hw_trick.c\
+	hardware/hw_md2.c\
+	hardware/hw_main.c\
+	hardware/hw_bsp.c\
+	hardware/hw_draw.c\
+	win32/win_vid.c\
+	win32/mid2strm.c\
+	win32/win_main.c\
+	win32/win_snd.c\
+	win32/win_cd.c\
+	win32/win_net.c\
+	win32/win_dbg.c\
+	win32/fabdxlib.c\
+	win32/dx_error.c\
+	win32/win_dll.c\
+	win32/win_sys.c\
+	sdl/SRB2DC/scramble.c\
+	sdl/SRB2DC/dchelp.c\
+	sdl/SRB2DC/i_udp.c\
+	sdl/SRB2CE/cehelp.c\
+	sdl/filter/filters.c\
+	sdl/filter/hq2x.c\
+	sdl/filter/main.c\
+	sdl/filter/lq2x.c\
+	sdl/SDL_main/SDL_openxdk_main.c\
+	sdl/SDL_main/SDL_dummy_main.c\
+	sdl/SDL_main/SDL_win32_main.c\
+	sdl/macosx/mac_alert.c\
+	sdl/SRB2XBOX/xboxhelp.c\
+	sdl/IMG_xpm.c\
+	sdl/i_net.c\
+	sdl/i_sound.c\
+	sdl/kbhit.c\
+	sdl/endtxt.c\
+	sdl/hwsym_sdl.c\
+	sdl/dosstr.c\
+	sdl/i_video.c\
+	sdl/i_cdmus.c\
+	sdl/ogl_sdl.c\
+	sdl/i_main.c\
+	sdl/i_system.c\
+	djgppdos/i_video.c\
+	djgppdos/i_net.c\
+	djgppdos/i_sound.c\
+	djgppdos/vid_vesa.c\
+	djgppdos/i_cdmus.c\
+	djgppdos/bcd.c\
+	djgppdos/i_main.c\
+	djgppdos/i_system.c\
+	p_floor.c\
+	console.c\
+	comptime.c\
+	g_game.c\
+	v_video.c\
+	p_user.c\
+	z_zone.c\
+	d_clisrv.c\
+	m_argv.c\
+	sounds.c\
+	r_sky.c\
+	dstrings.c\
+	st_stuff.c\
+	p_inter.c\
+	f_finale.c\
+	r_main.c\
+	m_bbox.c\
+	dummy/i_video.c\
+	dummy/i_net.c\
+	dummy/i_sound.c\
+	dummy/i_cdmus.c\
+	dummy/i_main.c\
+	dummy/i_system.c\
+	y_inter.c\
+	m_fixed.c\
+	m_random.c\
+	m_cheat.c\
+	r_bsp.c\
+	f_wipe.c\
+	r_things.c\
+	r_draw.c\
+	r_draw16.c\
+	r_data.c\
+	p_enemy.c\
+	r_draw8.c\
+	p_fab.c\
+	p_spec.c\
+	p_lights.c\
+	p_ceilng.c\
+	m_menu.c\
+	r_segs.c\
+	md5.c\
+	d_net.c\
+	am_map.c\
+	info.c\
+	p_map.c\
+	i_tcp.c\
+	filesrch.c\
+	p_setup.c\
+	p_sight.c\
+	g_input.c\
+	s_sound.c\
+	screen.c\
+	r_plane.c\
+	p_maputl.c\
+	hu_stuff.c\
+	p_saveg.c\
+	r_splats.c\
+	mserv.c\
+	w_wad.c\
+	p_mobj.c\
+	m_misc.c\
+	p_tick.c\
+	tables.c\
+	p_telept.c\
+	d_netcmd.c\
+	command.c\
+	d_netfil.c\
+	d_main.c\
+	dehacked.c\
+	byteptr.c
+
+module.pixmap.name=.
+module.pixmap.type=
+module.pixmap.files=\
+	win32/Srb2win.ico\
+	sdl/SRB2PSP/ICON0.png\
+	sdl/SRB2PSP/PIC1.png\
+	sdl/Srb2SDL.ico\
+	sdl/SDL_icon.xpm
+
+module.data.name=.
+module.data.type=
+module.data.files=
+
+module.help.name=.
+module.help.type=
+module.help.files=
+
+module.doc.name=.
+module.doc.type=
+module.doc.files=
+
+module.po.files=
+
+compiler.options.supports=
+compiler.options.include.paths=\
+	.\
+	..
+compiler.options.library.paths=
+compiler.options.libraries=
+compiler.options.libraries.selected=
+compiler.options.defines=\
+	HAVE_CONFIG_H
+compiler.options.defines.selected=
+compiler.options.warning.buttons=0 0 1 1 0 1 0 0 0 0 0 0 0 1 0 0 
+compiler.options.optimize.buttons=0 0 1 0 
+compiler.options.other.buttons=1 0 
+compiler.options.other.c.flags=
+compiler.options.other.l.flags=
+compiler.options.other.l.libs=
+
+project.src.paths=
