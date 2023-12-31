@@ -30,4 +30,4 @@ model from Quake 3 or Open Arena.
 world using only 256 colors from the pallette. For OpenGL mode the plan is to recreate a 3D hardware-accelerated renderer that renders a 3D world with a good dynamic lights and shaders.
 Both of these renderers must use triangles instead of lines to render the world.
 - Remove assembly code since it probably only works in some systems, but be careful because the software renderer uses it to render more faster.
--Optimize the game so we can make it run in low end PCs with same speed as an old console like Dreamcast at 35FPS capped.
+- Optimize the game so we can make it run in low end PCs with same speed as an old console like Dreamcast at 35FPS capped.
