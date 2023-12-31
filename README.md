@@ -9,7 +9,7 @@ Compiling the Source code (Windows only):
 
 
 
-If you want to contribute, here's the TODO list for Public Beta 3 and 4 below:
+If you want to contribute, here's the TODO list for Public Beta 3 and 4 below (As tasks are done, the list gets smaller. Some of them have already been done, gg):
 - Fix a game crash in netgame when the server decides to select unlockable stages but you don't have them unlocked yet.
 - Add new secret maps in single player mode (For public beta 3 we need 3 of them, one of them is already being made).
 - Fix a bug where the game does not receive the ":" character in the masterserver option (options >> server >> Master server).
