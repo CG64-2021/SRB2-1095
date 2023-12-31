@@ -20,14 +20,14 @@ If you want to contribute, you can do some chores for Public Beta 3 and 4 below:
 
 Future Plans:
 For the final release of the 1.09.5, there's some crazy plans I would like to do:
--Rewrite the splitscreen code because the original one is a pure mess that complicates the overall source code. The plan for now is to remove it in future beta releases.
--Rewrite the netcode because the original one is a mess and we would like to play some netgames without input delay and consistency failure. Maybe we can use the netcode
+- Rewrite the splitscreen code because the original one is a pure mess that complicates the overall source code. The plan for now is to remove it in future beta releases.
+- Rewrite the netcode because the original one is a mess and we would like to play some netgames without input delay and consistency failure. Maybe we can use the netcode
 model from Quake 3 or Open Arena.
--Add more features to SOC so we can make more advanced mods using it.
--Remove all unnecessary macros regarding console ports and such so the code would be less complex and more clean.
--Modify the makefile to be more simple and readable.
--Rewrite the software and OGL renderers because the original code for both is broken and old. For software mode the plan is to create a 3D software renderer that renders a 3D
+- Add more features to SOC so we can make more advanced mods using it.
+- Remove all unnecessary macros regarding console ports and such so the code would be less complex and more clean.
+- Modify the makefile to be more simple and readable.
+- Rewrite the software and OGL renderers because the original code for both is broken and old. For software mode the plan is to create a 3D software renderer that renders a 3D
 world using only 256 colors from the pallette. For OpenGL mode the plan is to recreate a 3D hardware-accelerated renderer that renders a 3D world with a good dynamic lights and shaders.
 Both of these renderers must use triangles instead of lines to render the world.
--Remove assembly code since it probably only works in some systems, but be careful because the software renderer uses it to render more faster.
+- Remove assembly code since it probably only works in some systems, but be careful because the software renderer uses it to render more faster.
 -Optimize the game so we can make it run in low end PCs with same speed as an old console like Dreamcast at 35FPS capped.
