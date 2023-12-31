@@ -1,7 +1,15 @@
 SRB2 1.09.5 is a fork from an existing 1.09.4 custom build (SRB2-OLD) that aims to add some gameplay and QoL improvements and add new content.
 You can check the SRB2-OLD source code here: https://git.do.srb2.org/SteelT/SRB2-OLD
 
-If you want to contribute, you can do some chores for Public Beta 3 and 4 below:
+Compiling the Source code (Windows only):
+- To compile the source code you need to follow some initial steps about MSYS2 here: https://wiki.srb2.org/wiki/Source_code_compiling/Makefiles
+- You need to install NASM in MSYS2 32-bit by using this command: ```pacman -S mingw-w64-i686-nasm```
+- Now, you need to specify the directory where the source code is + src folder using the ```cd``` command: ```cd "/c/my_folder/SRB2-1095/src```
+- And, finally, compile the source code by using this command: ```make CC=gcc MINGW=1 SDL=1```
+
+
+
+If you want to contribute, here's the TODO list for Public Beta 3 and 4 below:
 - Fix a game crash in netgame when the server decides to select unlockable stages but you don't have them unlocked yet.
 - Add new secret maps in single player mode (For public beta 3 we need 3 of them, one of them is already being made).
 - Fix a bug where the game does not receive the ":" character in the masterserver option (options >> server >> Master server).
@@ -19,6 +27,7 @@ If you want to contribute, you can do some chores for Public Beta 3 and 4 below:
 - Remove the input delay from the camera in third person in netgame
 
 Future Plans:
+
 For the final release of the 1.09.5, there's some crazy plans I would like to do:
 - Rewrite the splitscreen code because the original one is a pure mess that complicates the overall source code. The plan for now is to remove it in future beta releases.
 - Rewrite the netcode because the original one is a mess and we would like to play some netgames without input delay and consistency failure. Maybe we can use the netcode
