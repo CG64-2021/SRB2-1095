@@ -1388,7 +1388,7 @@ static void P_3dMovement(player_t* player)
 		&& !(player->gliding || player->exiting || (player->mo->state == &states[S_PLAY_PAIN] && player->powers[pw_flashing] && !onground))))
 	{
 		if (player->climbing)
-			player->mo->momz = (cmd->forwardmove*FRACUNIT)/10;
+			player->mo->momz = (cmd->forwardmove*FRACUNIT)/8;
 		else if (player->powers[pw_sneakers] || player->powers[pw_super]) // super sneakers?
 			movepushforward = cmd->forwardmove * ((thrustfactor*2)*acceleration);
 		else // if not, then run normally
