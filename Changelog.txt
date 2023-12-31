@@ -1,0 +1,19 @@
+#SRB2 Public Beta 3 Changelog
+- The bug regarding spindash speed being slow is now fixed
+- Changed the name of gametypes "race" and "time-only race" to "competition" and "race" respectively
+- Replaced the 2.1 heap system to the PrBoom one.
+- Team Match mode was removed from the options because it needs some improvements since the original one is a hack
+that uses an old and scrapped console command called "teamplay"
+- Changed the maxsend's default value from 200KB to 32MB and its MAX value was changed from 51MB to 64MB
+- Netgame's bandwidth value was changed from 3KB/s to 32KB/s
+- Infinity Ring's countdown is now 30 seconds instead of 15 seconds because the original one was too short be
+well used in netgame
+- "Advance to next level" option was moved to Network Options and now it works with all gametypes, but not Coop
+- "Autoaim (P1)" and "Autoaim (P2)" options were removed from control options, because autoaim is unused
+- 2D physics were modified to be the same as 3D physics
+- "Speeding off to level..." string was modified to be "Speeding off to MAPxx..." so you can see which number is the
+map you selected for any purposes
+- Sapphire Falls CTF was replaced by Hot Rock Zone because the original stage was just a poorly made CTF version of an
+existing Match map
+- Input delay from the third person camera was removed
+- Increased the knux's climbing z-speed from FRACUNIT/10 to FRACUNIT/8
