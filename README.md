@@ -4,18 +4,18 @@ You can check the SRB2-OLD source code here: https://git.do.srb2.org/SteelT/SRB2
 Compiling the Source code (Windows only):
 - To compile the source code you need to follow some initial steps about MSYS2 here: https://wiki.srb2.org/wiki/Source_code_compiling/Makefiles
 - You need to install NASM in MSYS2 32-bit by using this command: ```pacman -S mingw-w64-i686-nasm```
-- Now, you need to specify the directory where the source code is + src folder using the ```cd``` command: ```cd "/c/my_folder/SRB2-1095/src```
+- Now, you need to specify the directory where the source code is + src folder using the ```cd``` command: ```cd "/c/my_folder/SRB2-1095/src"```
 - And, finally, compile the source code by using this command: ```make CC=gcc MINGW=1 SDL=1```
 
 
 
-If you want to contribute, here's the TODO list for Public Beta 3 and 4 below (As tasks are done, the list gets smaller. Some of them have already been done, gg):
+If you want to contribute, here's the TODO list for Public Beta 3 and 4 below (As tasks are done, the list gets smaller. Some of them has already been done, thx):
 - Fix a game crash in netgame when the server decides to select unlockable stages but you don't have them unlocked yet.
 - Add new secret maps in single player mode (For public beta 3 we need 3 of them, one of them is already being made).
 - Fix a bug where the game does not receive the ":" character in the masterserver option (options >> server >> Master server).
 - Fix a bug where the game crashes after finishing the credits in multiplayer.
 - Rewrite skicolors system so we can add more than 16 skincolors in the future using SOC.
-- Secret stages should be shown in the stage select list in netgame if they are unlocked so the server can select them withou using console command.
+- Secret stages should be shown in the stage select list in netgame if they are unlocked so the server can select them without using console command.
 - Add Switch Team option in CTF so the players can select teams in the menu anytime (Network options -> CTF options -> Switch team).
 - Add coop options in Network Options so we can add options for coop mode.
 - Add "exit for all" option so the stage can only end once all players have completed the level.
@@ -24,7 +24,7 @@ If you want to contribute, here's the TODO list for Public Beta 3 and 4 below (A
 - Port the player list HUD from 2.0 to team match and CTF gametypes.
 - Add colormap support in OpenGL mode.
 - Port the ping measurement system from 2.0.
-- Remove the input delay from the camera in third person in netgame
+- Remove the input delay from the camera in third person in netgame.
 
 Future Plans:
 
