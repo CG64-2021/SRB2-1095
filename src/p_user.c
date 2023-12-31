@@ -7319,16 +7319,17 @@ void P_MoveChaseCamera(player_t *player, camera_t *thiscam, boolean netcalled)
 
 	if (!mo)
 		return;
-
-	if (netcalled && !demoplayback && displayplayer == consoleplayer)
-	{
+	
+	//CG64: Remove these comments to enable input delay in third person camera
+	//if (netcalled && !demoplayback && displayplayer == consoleplayer)
+	//{
 		if (player == &players[consoleplayer])
 			focusangle = localangle;
 		else if (player == &players[secondarydisplayplayer])
 			focusangle = localangle2;
-	}
-	else
-		focusangle = player->mo->angle;
+	//}
+	//else
+		//focusangle = player->mo->angle;
 
 	P_CameraThinker(thiscam);
 
