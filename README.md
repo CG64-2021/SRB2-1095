@@ -26,6 +26,7 @@ If you want to contribute, here's the TODO list for Public Beta 3 and 4 below (A
 - Add colormap support in OpenGL mode.
 - Port the ping measurement system from 2.0.
 - Remove the input delay from the camera in third person in netgame.
+- Remove analog control support in future beta releases because it doesn't work well for now
 
 Future Plans:
 
