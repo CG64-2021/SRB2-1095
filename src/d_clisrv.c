@@ -1932,7 +1932,7 @@ FILESTAMP
 				break;
 // -------------------------------------------- CLIENT RECEIVE ----------
 			case PT_SERVERTICS:
-				
+			{	
 				//Get server's random index to avoid desync
 				byte myrndindex = P_GetRandIndex();
 				short int randomdelta = (short int)netbuffer->u.serverpak.rndindex - myrndindex;
@@ -1981,6 +1981,7 @@ FILESTAMP
 				else
 					DEBFILE(va("frame not in bound: %u\n", neededtic));
 				break;
+			}
 			case PT_SERVERCFG:
 				break;
 			case PT_FILEFRAGMENT:
