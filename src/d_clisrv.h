@@ -24,7 +24,7 @@
 #include "tables.h"
 
 // more precise version number to compare in network
-#define SUBVERSION 005
+#define SUBVERSION 015
 
 // Network play related stuff.
 // There is a data struct that stores network
